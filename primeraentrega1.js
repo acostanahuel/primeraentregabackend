@@ -31,8 +31,7 @@ const code = () => {
       }
     
       getProductById = (ID) => {
-        let condition =  (prod) => prod.code === ID;
-        let position = this.products.findIndex(condition);
+        let position = this.products.findIndex(prod => prod.code === ID);
         position === -1 ? console.log("No existe el elemento buscado por ID"): console.log(this.products[position]);
     
      }

@@ -33,7 +33,7 @@ const code = () => {
       getProductById = (ID) => {
         
         let position = this.products.findIndex(prod => prod.code === ID);
-        position === -1 ? console.log("No existe el elemento buscado por ID"): console.log(this.products[position]);
+        return position === -1 ? "No existe el elemento buscado por ID": this.products[position];
     
      }
   }
